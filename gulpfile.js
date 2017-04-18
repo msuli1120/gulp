@@ -87,6 +87,10 @@ gulp.task('serve', function() {
 //gulp.watch("scss/*.scss", ['cssBuild']);
 });
 
+gulp.task('htmlBuild', function() {
+  browserSync.reload();
+});
+
 gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function(){
   browserSync.reload();
 });
